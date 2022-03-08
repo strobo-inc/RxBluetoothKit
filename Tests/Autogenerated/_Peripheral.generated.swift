@@ -406,7 +406,7 @@ class _Peripheral {
                       let characteristic = characteristic ?? _Characteristic(characteristic: cbCharacteristic, peripheral: strongSelf) else {
                     throw _BluetoothError.destroyed
                 }
-                
+
                 if let error = error {
                     throw _BluetoothError.characteristicWriteFailed(characteristic, error)
                 }
